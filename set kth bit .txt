@@ -1,0 +1,7 @@
+class solution{
+
+ int setbit(int N, int k)
+ {
+    return N | (1<<k);
+ }
+};
