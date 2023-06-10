@@ -1,24 +1,26 @@
-//brute force
-
 #include<iostream>
-using namespace std;
 #include<bits/stdc++.h>
+using namespace std;
 int main()
 {
-    vector<int>v1{2,1,6,7};
-    vector<int>v2{4,7,8,9};
-    int sum=10;
-    for(int i =0; i<v1.size(); i++)
+    vector<int>a{10,20,30,40,70,20};
+    int sum =50;
+    for (int  i = 0; i < a.size(); i++)
     {
-        int ele=v1[i];
-        for(int j=0; j<v2.size(); j++)
+        int e1=a[i];
+        for(int j =i+1; j<a.size(); j++)
         {
-            if(ele +v2[j]==sum)
+            int e2=a[j];
+            for(int k=j+1; k<a.size(); k++)
             {
-                cout<<"Pair Found"<<ele<<","<<v2[j]<<endl;
+                int e3=a[k];
+                if(e1+e2+e3==sum)
+                {
+                    cout<<"Pair found"<<e1<<" "<<e2<<" "<<e3<<endl;
+                }
             }
-
         }
     }
+    
     return 0;
 }

@@ -11,7 +11,7 @@ int main()
     for(int i =0; i<v1.size(); i++)
     {
         int ele=v1[i];
-        for(int j=i+1; j<v2.size(); j++)
+        for(int j=0; j<v2.size(); j++)
         {
             if(ele +v2[j]==sum)
             {
