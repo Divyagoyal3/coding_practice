@@ -33,11 +33,15 @@ public:
     }
 
     //copy constructor
-      study(study &obj)
+    study(study &obj)
     {
         this->weight = obj.weight;
         this->type = obj.type;
         cout << "Parameterised constructor-3 called" << this->weight<<endl;
+    }
+    ~study()
+    {
+        cout<<"Destructors"<<endl;
     }
 };
 
@@ -52,5 +56,12 @@ int main()
     study s3=s;
     //pass as a reff.
     study s4(*s2);
+
+    study *s5 = new  study();
+    s5->type=123;
+
+
+    //manauaaly
+    // delete s5;
     return 0;
 }
