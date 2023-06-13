@@ -6,6 +6,7 @@ int main()
 
     // sorted unique values in sorted order
     set<int> s;
+    //o(n log n)
     s.insert(10);
     s.insert(40);
     s.insert(40);
@@ -46,5 +47,8 @@ int main()
     cout<<*itr<< " ";
 }
 cout<<endl;
+
+unordered_set<int>s;
+s.insert(70);
     return 0;
 }
