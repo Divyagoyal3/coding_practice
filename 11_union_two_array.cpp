@@ -14,7 +14,8 @@ int main()
     }
     for (int i = 0; i < size2; i++)
     {
-    
+        
+       
         v.push_back(arr2[i]);
     }
     for (int i = 0; i < v.size(); i++)
