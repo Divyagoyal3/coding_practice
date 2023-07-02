@@ -8,6 +8,10 @@ int findpivot(vector<int>&arr)
     int mid = s+ (e-s)/2;
     while(s<=e)
     {
+        if(s==e)
+        {
+            return s;
+        }
         if(arr[mid+1]<arr.size()&&arr[mid]> arr[mid+1])
         {
             return mid;
@@ -30,7 +34,7 @@ int findpivot(vector<int>&arr)
 }
 int main()
 {
-    vector<int>arr{3,4,5,6,7,1,2};
+    vector<int>arr{1,3};
     int ans =findpivot(arr);
     cout<<"Pivot  element is:"<<arr[ans]<<endl;
     return 0;

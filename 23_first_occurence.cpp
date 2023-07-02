@@ -14,7 +14,7 @@ int binarysearch(vector<int>arr, int key)
         if (arr[mid] == key)
         {
             ans = mid;
-           e=mid-1;
+            e=mid-1;
         }
         else if (key < arr[mid])
         {
