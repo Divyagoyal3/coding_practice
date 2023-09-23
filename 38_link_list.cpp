@@ -113,6 +113,60 @@ void insertatpos(int data, int position, Node *&head, Node *&tail)
     // step 4: point prev node to newnode;
     prev->next = newnode;
 }
+// delete from first
+
+void deleteatb(int position, Node* &head, Node *&tail)
+{
+    if(head == NULL)
+    {
+        cout<<"Cannot delete, LL is empty";
+        return;
+    }
+    if(position == 1)
+    {
+        Node *temp = head;
+        head = head->next;
+        temp->next = NULL;
+        delete temp ;
+    }
+    int len = findlength(head)
+    if(position == len)
+    {
+        // step 1: fint prev
+        int i =1;
+        Node * prev = head;
+        while(i< position -1)
+        {
+            prev = prev->next;
+            i++;
+        }
+        
+        // step 2: 
+        prev->next = NULL;
+        // step 3: 
+        Node * temp = tail;
+        // step 4: 
+        tail = prev;
+        // step 5:
+        delete temp;
+    }
+    // delete middle node
+    // step 1: find prev and curr
+    int i = 1;
+    Node * prev= head;
+    while(i <position-1)
+    {
+        prev= prev->next;
+        i++;
+    }
+    Node * curr = prev->next;
+    // step 2: 
+    prev->next = curr->next;
+    // step 3:
+    curr->next = null;
+    // step 4:
+    delete curr;
+}
 
 int main()
 {
