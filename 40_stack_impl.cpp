@@ -85,5 +85,7 @@ int main()
 
 
     cout<<"Size of Stack"<<s.getsize()<<endl;
+
+    s.pop();
     return 0;
 }

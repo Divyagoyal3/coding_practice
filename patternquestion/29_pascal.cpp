@@ -1,4 +1,8 @@
-  int rows;
+#include<iostream>
+using namespace std;
+int main()
+{
+      int rows;
     cout << "Enter the number of rows : ";
     cin >> rows;
     cout << endl;
@@ -18,3 +22,6 @@
         cout << endl << endl;
     }
     cout << endl;
+
+     return 0;
+}

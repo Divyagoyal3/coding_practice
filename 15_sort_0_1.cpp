@@ -35,7 +35,7 @@ int main()
     int i =0;
     while(start<=end)
     {
-        if(v[i]<0)
+        if(v[i]<=0)
         {
          swap(v[start],v[i]);
          start++;
